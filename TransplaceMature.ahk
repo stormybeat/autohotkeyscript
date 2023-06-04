@@ -27,8 +27,16 @@
 
 :c*:commandMature::
 {
-    SendText "/mod message delete-message:False message-id:(put the id here) action:Add Mature reason:agreed to being old rule:9. Other"
+    SendText "/mod user "
+    SendText "(userID)"
+    Send "{Tab}"
+    SendText "Add Mature"
+    Send "{Tab}"
+    SendText "Agreed to Mature"
+    Send "{Tab}"
+    SendText "9. Other"
 }
+ 
 
 :c*:endMature::
 {
