@@ -1,13 +1,13 @@
 ﻿#Requires AutoHotkey v2.0
 #SingleInstance
 
-:c*:ticketStart::
+F13::
 {
     SendText "Heya, how can I help you today?"
     Send "{Enter}"
 }
 
-:c*:startMature::
+F14::
 {
     SendText "> Only individuals over the age of 18 are eligible to join this channel. Any false declaration of age will result in a ban from the server. If you are part of a system, your body's physical age must be over 18, and the alters using the channels must be over 18, we ask that other alters refrain from viewing/posting in this channel."
     Send "+{Enter}"	
@@ -25,7 +25,7 @@
     Send "{Enter}"
 }
 
-:c*:commandMature::
+F15::
 {
     SendText "/mod user "
     SendText "(userID)"
@@ -38,7 +38,7 @@
 }
  
 
-:c*:endMature::
+F16::
 {
     SendText "Thank You for confirming your age and congratulations for gaining access to the <#1071476999400464424> channel. Your role has been updated, granting you full access to the channel. In the event that you leave the server and later re-join, simply create a new ticket and reference this previous one to regain access."
     Send "+{Enter}"	
